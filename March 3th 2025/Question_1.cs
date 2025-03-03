@@ -26,10 +26,10 @@ public static int CalculateTotalDiscount(int Families)
 
     for (int i = 0; i < Families; i++)
     {
-        Console.Write("enter amount of people");
+        Console.WriteLine("enter amount of people");
         int People = int.Parse(Console.ReadLine());
 
-        Console.Write("enter amount of students");
+        Console.WriteLine("enter amount of students");
         int Students = int.Parse(Console.ReadLine());
 
         Total = Total + CalculateDiscount(People, Students);
@@ -46,7 +46,7 @@ public static void Main()
 
     for (int i = 0; i < 10; i++)
     {
-        Console.Write("how many familiesin town?");
+        Console.WriteLine("how many familiesin town?");
         int Families = int.Parse(Console.ReadLine());
 
         int Total = CalculateTotalDiscount(Families);
