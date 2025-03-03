@@ -53,7 +53,7 @@ public static void Main()
 
         if (Total > rdc[i])
         {
-            Console.WriteLine("town " + i + "exceeded the limit.);
+            Console.WriteLine("town " + i + "exceeded the limit.");
         }
     }
 }
