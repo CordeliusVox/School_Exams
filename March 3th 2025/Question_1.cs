@@ -38,24 +38,7 @@ public static int CalculateTotalDiscount(int Families)
     return Total;
 }
 
-// ג. פעולה שבודקת אילו יישובים חרגו מהתקציב של המועצה
-public static void CheckBudget(int[] rdc)
-{
-    for (int i = 0; i < 10; i++)
-    {
-        Console.Write($"כמה משפחות יש ביישוב {i}? ");
-        int numOfFamilies = int.Parse(Console.ReadLine());
-
-        int totalDiscount = CalculateTotalDiscountForTown(numOfFamilies);
-
-        if (totalDiscount > rdc[i])
-        {
-            Console.WriteLine($"היישוב {i} חרג מהתקציב! קיבל {totalDiscount} ש\"ח כאשר התקציב היה {rdc[i]} ש\"ח.");
-        }
-    }
-}
-
-// פונקציה ראשית שמפעילה את התוכנית
+// ג. תכנית ראשית שבודקת אילו יישובים חרגו מהתקציב של המועצה
 public static void Main()
 {
     // מערך שנתון
@@ -71,6 +54,8 @@ public static void Main()
         if (Total > rdc[i])
         {
             Console.WriteLine("town " + i + "exceeded the limit.);
+        }
+    }
 }
 
 
